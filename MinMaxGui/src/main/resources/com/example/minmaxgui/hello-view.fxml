@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="522.0" prefWidth="360.0" style="-fx-background-color: #A30000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.minmaxgui.HelloController">
+    <AnchorPane layoutX="130.0" layoutY="158.0" prefHeight="364.0" prefWidth="360.0" style="-fx-background-color: #808080;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="158.0">
+        <children>
+            <Button fx:id="Button5" focusTraversable="false" layoutX="121.0" layoutY="191.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="120.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+            <Button fx:id="Button8" focusTraversable="false" layoutX="120.0" layoutY="246.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="0.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+            <Button fx:id="Button3" focusTraversable="false" layoutX="54.0" layoutY="46.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="240.0" AnchorPane.rightAnchor="0.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+            <Button fx:id="Button6" focusTraversable="false" layoutX="238.0" layoutY="58.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="120.0" AnchorPane.rightAnchor="0.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+            <Button fx:id="Button1" focusTraversable="false" layoutX="125.0" layoutY="31.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="0.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+            <Button fx:id="Button9" focusTraversable="false" layoutX="152.0" layoutY="208.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+            <Button fx:id="Button7" focusTraversable="false" layoutX="23.0" layoutY="188.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+            <Button fx:id="Button2" focusTraversable="false" layoutX="149.0" layoutY="33.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="120.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+            <Button fx:id="Button4" focusTraversable="false" layoutX="222.0" layoutY="48.0" minHeight="120.0" minWidth="120.0" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="0.0">
+                <font>
+                    <Font name="System Bold" size="52.0" />
+                </font>
+            </Button>
+        </children>
+    </AnchorPane>
+   <Button fx:id="RestartButton" focusTraversable="false" layoutX="146.0" layoutY="14.0" mnemonicParsing="false" onAction="#RestartButtonClick" prefHeight="34.0" prefWidth="68.0" text="Restart">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Text fill="WHITE" layoutX="82.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" AnchorPane.leftAnchor="50.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" layoutX="254.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O" AnchorPane.rightAnchor="50.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+   </Text>
+   <Text fx:id="XScore" fill="WHITE" layoutX="100.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" AnchorPane.leftAnchor="50.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+   </Text>
+   <Text fx:id="OScore" fill="WHITE" layoutX="245.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" AnchorPane.rightAnchor="50.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+   </Text>
+   <Label fx:id="ResultLabel" layoutX="117.0" layoutY="62.0" text="X is the winner" textFill="WHITE" AnchorPane.topAnchor="62.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Button fx:id="NextButton" focusTraversable="false" layoutX="130.0" layoutY="93.0" mnemonicParsing="false" onAction="#NextButton" prefHeight="34.0" prefWidth="99.0" text="Start Round">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+</AnchorPane>
