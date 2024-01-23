@@ -98,18 +98,6 @@ public class HelloController {
         return board[i][j] == ' ';
     }
 
-    private void SetButtonsColor(char c, Button b1, Button b2, Button b3) {
-        if (c == 'X') {
-            b1.setStyle("-fx-background-color: " + toRgbString(Color.LIGHTGREEN) + "; -fx-text-fill: #ffffff;");
-            b2.setStyle("-fx-background-color: " + toRgbString(Color.LIGHTGREEN) + "; -fx-text-fill: #ffffff;");
-            b3.setStyle("-fx-background-color: " + toRgbString(Color.LIGHTGREEN) + "; -fx-text-fill: #ffffff;");
-        } else {
-            b1.setStyle("-fx-background-color: " + toRgbString(Color.RED) + "; -fx-text-fill: #ffffff;");
-            b2.setStyle("-fx-background-color: " + toRgbString(Color.GREEN) + "; -fx-text-fill: #ffffff;");
-            b3.setStyle("-fx-background-color: " + toRgbString(Color.GREEN) + "; -fx-text-fill: #ffffff;");
-        }
-    }
-
     public char GetWinner() {
         for (int i = 0; i < 3; i++) {
             if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ') {
@@ -238,7 +226,7 @@ public class HelloController {
             ResultLabel.setText("Draw");
             ResultLabel.setVisible(true);
         } else {
-            PauseTransition pause = new PauseTransition(Duration.seconds(10));
+            PauseTransition pause = new PauseTransition(Duration.seconds(1));
             pause.setOnFinished(event -> {
                 try {
                     PreformBotMove();
